@@ -133,6 +133,18 @@
   .case-flow{margin-top:24px;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
   .flow-step{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;font-size:11px;color:var(--muted);font-family:'Space Mono',monospace;}
   .flow-step strong{display:block;color:var(--white);font-family:'DM Sans',sans-serif;font-size:13px;margin-bottom:4px;}
+
+  .case-shot,
+  .shot-img-wrap,
+  .lightbox-img{
+    cursor:pointer;
+  }
+  .lightbox.open,
+  .lightbox.open img,
+  .lightbox-close{
+    cursor:pointer;
+  }
+
   .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.94);backdrop-filter:blur(10px);z-index:10000;display:none;align-items:center;justify-content:center;padding:28px;}
   .lightbox.open{display:flex;}
   .lightbox img{max-width:96vw;max-height:88vh;object-fit:contain;border-radius:12px;box-shadow:0 24px 90px rgba(0,0,0,.65);}
@@ -334,7 +346,7 @@
 
             <div class="case-grid mobile-grid">
               <div class="case-shot mobile-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-new-lead.jpg" alt="OpsPulse new lead captured Telegram alert"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-new-lead.jpg" alt="OpsPulse new lead captured Telegram alert"></div>
                 <div class="shot-body">
                   <div class="shot-label">Lead Management</div>
                   <div class="shot-title">New lead captured instantly</div>
@@ -343,7 +355,7 @@
               </div>
 
               <div class="case-shot mobile-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-approved-booking.jpg" alt="OpsPulse approved booking Telegram alert"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-approved-booking.jpg" alt="OpsPulse approved booking Telegram alert"></div>
                 <div class="shot-body">
                   <div class="shot-label">Booking Automation</div>
                   <div class="shot-title">Approved booking alert</div>
@@ -352,7 +364,7 @@
               </div>
 
               <div class="case-shot mobile-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-daily-report.jpg" alt="OpsPulse daily operations report Telegram alert"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-daily-report.jpg" alt="OpsPulse daily operations report Telegram alert"></div>
                 <div class="shot-body">
                   <div class="shot-label">Daily Reporting</div>
                   <div class="shot-title">Daily operations brief</div>
@@ -361,7 +373,7 @@
               </div>
 
               <div class="case-shot mobile-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-weekly-report.jpg" alt="OpsPulse weekly operations report Telegram alert"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-weekly-report.jpg" alt="OpsPulse weekly operations report Telegram alert"></div>
                 <div class="shot-body">
                   <div class="shot-label">Executive Reporting</div>
                   <div class="shot-title">Weekly operations report</div>
@@ -382,7 +394,7 @@
 
             <div class="case-grid dashboard-grid">
               <div class="case-shot dashboard-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-leads.png" alt="OpsPulse leads Google Sheet dashboard"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-leads.png" alt="OpsPulse leads Google Sheet dashboard"></div>
                 <div class="shot-body">
                   <div class="shot-label">Lead Dashboard</div>
                   <div class="shot-title">Lead tracking database</div>
@@ -391,7 +403,7 @@
               </div>
 
               <div class="case-shot dashboard-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-tasks.png" alt="OpsPulse tasks Google Sheet dashboard"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-tasks.png" alt="OpsPulse tasks Google Sheet dashboard"></div>
                 <div class="shot-body">
                   <div class="shot-label">Task Monitoring</div>
                   <div class="shot-title">Task management dashboard</div>
@@ -400,7 +412,7 @@
               </div>
 
               <div class="case-shot dashboard-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-appointments-1.png" alt="OpsPulse appointments Google Sheet dashboard first view"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-appointments-1.png" alt="OpsPulse appointments Google Sheet dashboard first view"></div>
                 <div class="shot-body">
                   <div class="shot-label">Appointment Dashboard</div>
                   <div class="shot-title">Booking and service tracking</div>
@@ -409,7 +421,7 @@
               </div>
 
               <div class="case-shot dashboard-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-appointments-2.png" alt="OpsPulse appointments calendar status dashboard"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-appointments-2.png" alt="OpsPulse appointments calendar status dashboard"></div>
                 <div class="shot-body">
                   <div class="shot-label">Status Tracking</div>
                   <div class="shot-title">Calendar event records</div>
@@ -418,7 +430,7 @@
               </div>
 
               <div class="case-shot dashboard-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-alerts.png" alt="OpsPulse alerts Google Sheet dashboard"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-alerts.png" alt="OpsPulse alerts Google Sheet dashboard"></div>
                 <div class="shot-body">
                   <div class="shot-label">Alert Engine</div>
                   <div class="shot-title">Centralized alert log</div>
@@ -439,7 +451,7 @@
 
             <div class="case-grid automation-grid">
               <div class="case-shot automation-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-calendar.png" alt="OpsPulse Google Calendar event integration"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-calendar.png" alt="OpsPulse Google Calendar event integration"></div>
                 <div class="shot-body">
                   <div class="shot-label">Calendar Integration</div>
                   <div class="shot-title">Google Calendar scheduling</div>
@@ -448,7 +460,7 @@
               </div>
 
               <div class="case-shot automation-shot workflow-shot">
-                <div class="shot-img-wrap"><img class="lightbox-img" src="opspulse-workflows.png" alt="OpsPulse n8n workflow dashboard"></div>
+                <div class="shot-img-wrap"><img class="lightbox-img" role="button" tabindex="0" src="opspulse-workflows.png" alt="OpsPulse n8n workflow dashboard"></div>
                 <div class="shot-body">
                   <div class="shot-label">Workflow Architecture</div>
                   <div class="shot-title">Published n8n workflow system</div>
@@ -690,7 +702,7 @@ Verify property condition, estimate repair cost, compare nearby sales, then cont
   let mx=0,my=0,rx=0,ry=0;
   document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx-5+'px';cursor.style.top=my-5+'px';});
   function ar(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx-18+'px';ring.style.top=ry-18+'px';requestAnimationFrame(ar);}ar();
-  document.querySelectorAll('a,button').forEach(el=>{
+  document.querySelectorAll('a, button, .case-shot, .shot-img-wrap, .lightbox-img, .lightbox-close').forEach(el=>{
     el.addEventListener('mouseenter',()=>{cursor.style.transform='scale(2.5)';ring.style.transform='scale(1.5)';ring.style.opacity='0.8';});
     el.addEventListener('mouseleave',()=>{cursor.style.transform='scale(1)';ring.style.transform='scale(1)';ring.style.opacity='0.5';});
   });
@@ -702,14 +714,21 @@ Verify property condition, estimate repair cost, compare nearby sales, then cont
   const lightboxImage=document.getElementById('lightboxImage');
   const lightboxCaption=document.getElementById('lightboxCaption');
   const lightboxClose=document.getElementById('lightboxClose');
+  function openLightbox(img){
+    lightboxImage.src=img.src;
+    lightboxImage.alt=img.alt || 'Expanded portfolio screenshot';
+    lightboxCaption.textContent=img.alt || '';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  }
   document.querySelectorAll('.lightbox-img').forEach(img=>{
-    img.addEventListener('click',()=>{
-      lightboxImage.src=img.src;
-      lightboxImage.alt=img.alt || 'Expanded portfolio screenshot';
-      lightboxCaption.textContent=img.alt || '';
-      lightbox.classList.add('open');
-      lightbox.setAttribute('aria-hidden','false');
-      document.body.style.overflow='hidden';
+    img.addEventListener('click',()=>openLightbox(img));
+    img.addEventListener('keydown',e=>{
+      if(e.key==='Enter'||e.key===' '){
+        e.preventDefault();
+        openLightbox(img);
+      }
     });
   });
   function closeLightbox(){
